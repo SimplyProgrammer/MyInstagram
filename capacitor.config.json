@@ -1,0 +1,7 @@
+{
+  "appId": "org.ugp.instagram",
+  "appName": "Instagram",
+  "webDir": "dist",
+  "npmClient": "npm",
+  "bundledWebRuntime": false
+}
