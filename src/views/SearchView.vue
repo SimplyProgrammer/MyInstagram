@@ -23,31 +23,31 @@ export default {
 			profiles: [
 				{
 					name: "mateklemp", 
-					imgSrc: process.env.VUE_APP_ORIG_ASSETS + "samples/avatars/mateklemp.jpg"
+					imgSrc: this.assets("avatars/mateklemp.jpg")
 				},
 				{
-					imgSrc: process.env.VUE_APP_ORIG_ASSETS + "samples/avatars/teamklemp.jpg",
+					imgSrc: this.assets("avatars/teamklemp.jpg"),
 					name: "teamklemp"
 				},
 				{
 					name: "bhadbhabie", 
-					imgSrc: process.env.VUE_APP_ORIG_ASSETS + "samples/avatars/bhadbhabie.jpg"
+					imgSrc: this.assets("avatars/bhadbhabie.jpg")
 				},
 				{
 					name: "loganpaul", 
-					imgSrc: process.env.VUE_APP_ORIG_ASSETS + "samples/avatars/loganpaul.jpg"
+					imgSrc: this.assets("avatars/loganpaul.jpg")
 				},
 				{
 					name: "lenkamie", 
-					imgSrc: process.env.VUE_APP_ORIG_ASSETS + "samples/avatars/lenkamie.jpg",
+					imgSrc: this.assets("avatars/lenkamie.jpg"),
 				},
 				{
 					name: "elonmusk", 
-					imgSrc: process.env.VUE_APP_ORIG_ASSETS + "samples/avatars/elonmusk.jpg"
+					imgSrc: this.assets("avatars/elonmusk.jpg")
 				},
 				{
 					name: "expl0ited", 
-					imgSrc: process.env.VUE_APP_ORIG_ASSETS + "samples/avatars/expl0ited_.jpg",
+					imgSrc: this.assets("avatars/expl0ited_.jpg"),
 				}
 			]
 		}

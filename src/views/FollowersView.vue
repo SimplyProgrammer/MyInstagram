@@ -32,7 +32,7 @@
 <script>
 export default {
 	mounted() {
-		for (let i = 0; i < 25; i++) {
+		for (let i = 0; i < 25; i++) { //Mock data generator
 			const message = this.messages[i % this.messages.length];
 			message.distance = Math.round(Math.random() * 100 + 1);
 			this.messages.push(message);
@@ -44,37 +44,37 @@ export default {
 			messages: [
 				{
 					text: "<b>mateklemp</b> compented on <b>bhadbhabie</b> and <b>4 others</b>.", 
-					imgSrc: process.env.VUE_APP_ORIG_ASSETS + "samples/avatars/mateklemp.jpg",
+					imgSrc: this.assets("avatars/mateklemp.jpg"),
 					distance: 64
 				},
 				{
 					text: "<b>mateklemp</b> compented on <b>bhadbhabie</b> and <b>6 others</b>.", 
-					imgSrc: process.env.VUE_APP_ORIG_ASSETS + "samples/avatars/teamklemp.jpg",
+					imgSrc: this.assets("avatars/teamklemp.jpg"),
 					distance: 64
 				},
 				{
 					text: "<b>mateklemp</b> compented on <b>bhadbhabie</b> and <b>2 others</b>.", 
-					imgSrc: process.env.VUE_APP_ORIG_ASSETS + "samples/avatars/bhadbhabie.jpg",
+					imgSrc: this.assets("avatars/bhadbhabie.jpg"),
 					distance: 64
 				},
 				{
 					text: "<b>mateklemp</b> compented on <b>bhadbhabie</b> and <b>6 others</b>.",  
-					imgSrc: process.env.VUE_APP_ORIG_ASSETS + "samples/avatars/loganpaul.jpg",
+					imgSrc: this.assets("avatars/loganpaul.jpg"),
 					distance: 64
 				},
 				{
 					text: "<b>mateklemp</b> compented on <b>bhadbhabie</b> and <b>2 others</b>.",  
-					imgSrc: process.env.VUE_APP_ORIG_ASSETS + "samples/avatars/lenkamie.jpg",
+					imgSrc: this.assets("avatars/lenkamie.jpg"),
 					distance: 64
 				},
 				{
 					text: "<b>mateklemp</b> compented on <b>bhadbhabie</b> and <b>2 others</b>.",  
-					imgSrc: process.env.VUE_APP_ORIG_ASSETS + "samples/avatars/elonmusk.jpg",
+					imgSrc: this.assets("avatars/elonmusk.jpg"),
 					distance: 64
 				},
 				{
 					text: "<b>mateklemp</b> compented on <b>bhadbhabie</b> and <b>2 others</b>.",  
-					imgSrc: process.env.VUE_APP_ORIG_ASSETS + "samples/avatars/expl0ited_.jpg",
+					imgSrc: this.assets("avatars/expl0ited_.jpg"),
 					distance: 64
 				}
 			]

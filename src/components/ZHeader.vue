@@ -37,9 +37,6 @@ export default {
 
 <style lang="scss" scoped>
 ion-toolbar {
-	// height: 54px !important;
-	// max-height: 54px !important;
-	// min-height: 54px !important;
 	--padding-start: 10px;
 	--padding-end: 10px;
 	--padding-top: 0px;

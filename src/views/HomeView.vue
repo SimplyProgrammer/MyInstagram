@@ -1,7 +1,7 @@
 <template>
 	 <ion-page>
 		<Z-Header :leftIcon="icons.cameraOut" :rightIcon="icons.paperPlaneOut" ref="header">
-			<img class="w-[120px]" :src="origAssets + 'instagram-logo.png'">
+			<img class="w-[120px]" :src="assets('instagram-logo.png')">
 		</Z-Header>
 
 		<ion-content>
@@ -22,7 +22,7 @@
 			</section>
 
 			<section v-for="profile in profiles" :key="profile" :id="profile.name">
-				<APostCard v-if="profile.posts" v-bind="profile" />
+				<A-Post-Card v-if="profile.posts" v-bind="profile" />
 			</section>
 		</ion-content> 
 	</ion-page>
@@ -62,10 +62,10 @@ export default {
 			profiles: [
 				{
 					name: "mateklemp", 
-					imgSrc: process.env.VUE_APP_ORIG_ASSETS + "samples/avatars/mateklemp.jpg",
+					imgSrc: this.assets("avatars/mateklemp.jpg"),
 					posts: [
 						{
-							imgSrc: process.env.VUE_APP_ORIG_ASSETS + "samples/posts/mateklemp.jpg",
+							imgSrc: this.assets("posts/mateklemp.jpg"),
 							likedBy: "Liked by <b>mateklemp</b> and <b>22 others</b>",
 							text: "Wait a minute. Wait a minute, Doc. Uhhh... Are you telling me that you built a time machine... out of a DeLorean?! Whoa. This is heavy.",
 							tags: ["#homolka", "@chatahomolka"],
@@ -74,12 +74,12 @@ export default {
 					]
 				},
 				{
-					imgSrc: process.env.VUE_APP_ORIG_ASSETS + "samples/avatars/teamklemp.jpg",
+					imgSrc: this.assets("avatars/teamklemp.jpg"),
 					name: "teamklemp", 
 					location: "Homolka",
 					posts: [
 						{
-							imgSrc: process.env.VUE_APP_ORIG_ASSETS + "samples/posts/teamklemp.jpg",
+							imgSrc: this.assets("posts/teamklemp.jpg"),
 							likedBy: "Liked by <b>mateklemp</b> and <b>22 others</b>",
 							text: "Wait a minute. Wait a minute, Doc. Uhhh... Are you telling me that you built a time machine... out of a DeLorean?! Whoa. This is heavy.",
 							tags: ["#homolka", "@chatahomolka"],
@@ -89,11 +89,11 @@ export default {
 				},
 				{
 					name: "bhadbhabie", 
-					imgSrc: process.env.VUE_APP_ORIG_ASSETS + "samples/avatars/bhadbhabie.jpg",
+					imgSrc: this.assets("avatars/bhadbhabie.jpg"),
 					location: "Melrose Avenue",
 					posts: [
 						{
-							imgSrc: process.env.VUE_APP_ORIG_ASSETS + "samples/posts/bhadbhabie.jpg",
+							imgSrc: this.assets("posts/bhadbhabie.jpg"),
 							likedBy: "Liked by <b>mateklemp</b> and <b>22 others</b>",
 							text: "Wait a minute. Wait a minute, Doc. Uhhh... Are you telling me that you built a time machine... out of a DeLorean?! Whoa. This is heavy.",
 							tags: ["#homolka", "@chatahomolka"],
@@ -103,11 +103,11 @@ export default {
 				},
 				{
 					name: "loganpaul", 
-					imgSrc: process.env.VUE_APP_ORIG_ASSETS + "samples/avatars/loganpaul.jpg",
+					imgSrc: this.assets("avatars/loganpaul.jpg"),
 					location: "Dubai, United Arab Emirates",
 					posts: [
 						{
-							imgSrc: process.env.VUE_APP_ORIG_ASSETS + "samples/posts/loganpaul.jpg",
+							imgSrc: this.assets("posts/loganpaul.jpg"),
 							likedBy: "Liked by <b>mateklemp</b> and <b>22 others</b>",
 							text: "Wait a minute. Wait a minute, Doc. Uhhh... Are you telling me that you built a time machine... out of a DeLorean?! Whoa. This is heavy.",
 							tags: ["#homolka", "@chatahomolka"],
@@ -117,14 +117,14 @@ export default {
 				},
 				{
 					name: "lenkamie", 
-					imgSrc: process.env.VUE_APP_ORIG_ASSETS + "samples/avatars/lenkamie.jpg",
+					imgSrc: this.assets("avatars/lenkamie.jpg"),
 				},
 				{
 					name: "elonmusk", 
-					imgSrc: process.env.VUE_APP_ORIG_ASSETS + "samples/avatars/elonmusk.jpg",
+					imgSrc: this.assets("avatars/elonmusk.jpg"),
 					posts: [
 						{
-							imgSrc: process.env.VUE_APP_ORIG_ASSETS + "samples/posts/elonmusk.jpg", 
+							imgSrc: this.assets("posts/elonmusk.jpg"), 
 							likedBy: "Liked by <b>mateklemp</b> and <b>22 others</b>",
 							text: "Wait a minute. Wait a minute, Doc. Uhhh... Are you telling me that you built a time machine... out of a DeLorean?! Whoa. This is heavy.",
 							tags: ["#homolka", "@chatahomolka"],
@@ -134,11 +134,11 @@ export default {
 				},
 				{
 					name: "expl0ited", 
-					imgSrc: process.env.VUE_APP_ORIG_ASSETS + "samples/avatars/expl0ited_.jpg",
+					imgSrc: this.assets("avatars/expl0ited_.jpg"),
 					location: "Bratislava",
 					posts: [
 						{
-							imgSrc: process.env.VUE_APP_ORIG_ASSETS + "samples/posts/expl0ited_.jpg",
+							imgSrc: this.assets("posts/expl0ited_.jpg"),
 							likedBy: "Liked by <b>mateklemp</b> and <b>22 others</b>",
 							text: "Wait a minute. Wait a minute, Doc. Uhhh... Are you telling me that you built a time machine... out of a DeLorean?! Whoa. This is heavy.",
 							tags: ["#homolka", "@chatahomolka"],

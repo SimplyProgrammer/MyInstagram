@@ -78,11 +78,11 @@ export default {
 	data() {
 		return {
 			name: "loganpaul",
-			profilePic: process.env.VUE_APP_ORIG_ASSETS + "samples/avatars/loganpaul.jpg",
+			profilePic: this.assets("avatars/loganpaul.jpg"),
 			posts: 757,
 			followers: "4.6M",
 			following: 151,
-			thumbs:  [...Array(21)].map((obj, i) => process.env.VUE_APP_ORIG_ASSETS + "samples/thumbs/" + ((i+1) % 11) + ".jpg")
+			thumbs:  [...Array(21)].map((obj, i) => this.assets("thumbs/" + ((i+1) % 11) + ".jpg"))
 		}
 	}
 }

@@ -4,7 +4,9 @@ import { modalController, toastController } from "@ionic/vue"; //modalController
 // Global utility
 export default {
 	methods: {
-		
+		assets(resourcesName) { //Get resource
+			return require(process.env.VUE_APP_ORIG_ASSETS + resourcesName);
+		}
 	},
 
 	data() {
